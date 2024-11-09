@@ -1,29 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <h1>Password Generator</h1>
+      <section>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Password generator app</title>
-</head>
-<body>
+        <div class="passwordContent">
+          <span></span>
+          <p>icon</p>
+        </div>
 
-  Password Generator
 
-  P4$5W0rD!
+        <form>
+          <div>
+            <label>Character Length</label>
+            <span>10</span>
+          </div>
 
-  Character Length
+          <label>
+            <input type="checkbox" name="option1" value="Include Uppercase Letters">
+            Include Uppercase Letters
+          </label><br>
+          
+          <label>
+            <input type="checkbox" name="option2" value="Include Lowercase Letters">
+            Include Lowercase Letters
+          </label><br>
+          
+          <label>
+            <input type="checkbox" name="option3" value="Include Numbers">
+            Include Numbers
+          </label><br>
+          
+          <label>
+            <input type="checkbox" name="option4" value="Include Symbols">
+            Include Symbols
+          </label>
 
-  Include Uppercase Letters
-  Include Lowercase Letters
-  Include Numbers
-  Include Symbols
+          <div>
+            <span>STRENGTH</span>
+          </div>
 
-  Strength
+          <button>Generate</button>
+        </form>
 
-  Generate
-
-</body>
+        
+      </section>
+    </main>
+  </body>
 </html>
