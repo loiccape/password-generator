@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'JetBrain' ;
+    src: url('./assets/fonts/JetBrainsMono-VariableFont_wght.ttf');
+}
+:root{
+
+    --red : #F64A4A;
+    --orange : #FB7C58;
+    --yellow : #F8CD65;
+    --green : #A4FFAF;
+    --white : #E6E5EA;
+    --dark : #24232C;
+    --very-dark : #18171F;
+
+}
+
+.typoHeadingL{
+    font-size: 32px;
+    line-height: 43px;
+    font-weight: bold;
+}
+
+.typoHeadingM{
+    font-size: 24px;
+    line-height: 31px;
+    font-weight: bold;
+}
+
+.typoBody{
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: bold;
+}
+
+body{
+    height: 100vh;
+    background-color: var(--very-dark);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'JetBrain';
+}
+
+main{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    max-width: 100vw;
+}
+
+h1{
+    color: #817D92;
+}
+
+.passwordContent{
+    height: 64px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--dark);
+    margin-top: 16px;
+    color: var(--white);
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+form{
+    margin-top: 16px;
+    background-color: var(--dark);
+    padding: 20px;
+}

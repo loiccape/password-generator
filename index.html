@@ -4,41 +4,44 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script defer src="./main.js"></script>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <main>
-      <h1>Password Generator</h1>
+      <h1 class="typoBody">Password Generator</h1>
       <section>
 
         <div class="passwordContent">
-          <span></span>
-          <p>icon</p>
+          <span class="generatedPassword typoHeadingL" id="generatedPassword"></span>
+          <img src="./assets/images/icon-copy.svg" alt="copy"/>
         </div>
 
 
-        <form>
+        <form id="form">
           <div>
             <label>Character Length</label>
-            <span>10</span>
+            <input type="number" class="characterLength" id="characterLength">
+            </input>
           </div>
 
           <label>
-            <input type="checkbox" name="option1" value="Include Uppercase Letters">
+            <input type="checkbox" value="Include Uppercase Letters" id="checkboxUppercase">
             Include Uppercase Letters
           </label><br>
           
           <label>
-            <input type="checkbox" name="option2" value="Include Lowercase Letters">
+            <input type="checkbox" value="Include Lowercase Letters" id="checkboxLowercase">
             Include Lowercase Letters
           </label><br>
           
           <label>
-            <input type="checkbox" name="option3" value="Include Numbers">
+            <input type="checkbox" value="Include Numbers" id="checkboxNumbers">
             Include Numbers
           </label><br>
           
           <label>
-            <input type="checkbox" name="option4" value="Include Symbols">
+            <input type="checkbox" value="Include Symbols" id="checkboxSymbols">
             Include Symbols
           </label>
 
@@ -46,7 +49,7 @@
             <span>STRENGTH</span>
           </div>
 
-          <button>Generate</button>
+          <button type="submit">Generate</button>
         </form>
 
         
