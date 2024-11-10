@@ -33,7 +33,7 @@
 }
 
 .typoBody{
-    font-size: 18px;
+    font-size: 16px;
     line-height: 23px;
     font-weight: bold;
 }
@@ -78,4 +78,121 @@ form{
     margin-top: 16px;
     background-color: var(--dark);
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.characterContent > :first-child{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    align-items: center;
+    
+}
+
+.characterContent > :first-child > span {
+    color: var(--green);
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 8px;
+    background: var(--very-dark);
+    outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb{
+    
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: var(--white);
+
+}
+
+.uppercaseLabel{
+    margin-top: 40px;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+
+    -webkit-appearance: none;
+
+    /* Couleurs par défaut de la case */
+    background-color: var(--dark); /* Couleur de fond initiale */
+    border: 2px solid var(--white); /* Bordure */
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* Couleur de la case lorsqu'elle est cochée et ajout de l'image */
+input[type="checkbox"]:checked {
+    background-color: var(--green);
+    border: 2px solid var(--green);
+    background-image: url('./assets/images/icon-check.svg'); /* Remplacez par le chemin de votre image */
+    background-size: 70% 70%; /* Ajustez la taille de l'image */
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+label{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.strengthContent{
+    background-color: var(--very-dark);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.strengthContent > :last-child{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    padding-left: 10px;
+}
+
+.power{
+    display: flex;
+   
+}
+
+.power > *{
+    border: 1px solid white;
+    color: var(--very-dark);
+    margin-left: 5px;
+    width: 10px;
+    height: 28px;
+}
+
+button{
+    margin-top: 20px;
+    background-color: var(--green);
+    border: none;
+    height: 56px;
+    display: flex;
+align-items: center;
+justify-content: center;
+color: var(--dark);
+}
+
+button > img {
+    margin-left: 10px;
+}
+
+@media only screen and (min-device-width : 768px) {
+    section{
+        width: 540px;
+        max-height: 632px;
+    }
 }

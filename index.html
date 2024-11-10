@@ -14,42 +14,58 @@
 
         <div class="passwordContent">
           <span class="generatedPassword typoHeadingL" id="generatedPassword"></span>
-          <img src="./assets/images/icon-copy.svg" alt="copy"/>
+          <img src="./assets/images/icon-copy.svg" alt="copy" id="copyIcon"/>
         </div>
 
 
         <form id="form">
-          <div>
-            <label>Character Length</label>
-            <input type="number" class="characterLength" id="characterLength">
+          <div class="characterContent">
+            <div>
+
+              <label id="characterLabel">Character Length</label>
+              <span class="typoHeadingM" id="lengthNumber"></span>
+            </div>
+            <input type="range" class="characterLength" id="characterLength" aria-labelledby="characterLabel" min="6" max="12" value="9">
             </input>
           </div>
 
-          <label>
-            <input type="checkbox" value="Include Uppercase Letters" id="checkboxUppercase">
+          <label class="uppercaseLabel">
+            <input type="checkbox" value="Include Uppercase Letters" id="checkboxUppercase" checked>
             Include Uppercase Letters
-          </label><br>
+          </label>
           
           <label>
-            <input type="checkbox" value="Include Lowercase Letters" id="checkboxLowercase">
+            <input type="checkbox" value="Include Lowercase Letters" id="checkboxLowercase" checked>
             Include Lowercase Letters
-          </label><br>
+          </label>
           
           <label>
-            <input type="checkbox" value="Include Numbers" id="checkboxNumbers">
+            <input type="checkbox" value="Include Numbers" id="checkboxNumbers" checked>
             Include Numbers
-          </label><br>
+          </label>
           
           <label>
             <input type="checkbox" value="Include Symbols" id="checkboxSymbols">
             Include Symbols
           </label>
 
-          <div>
+          <div class="strengthContent">
             <span>STRENGTH</span>
+
+            <div>
+              <span id="levelText"></span>
+              <div class="power">
+                <span id="pw"></span>
+                <span id="pw"></span>
+                <span id="pw"></span>
+                <span id="pw"></span>
+              </div>
+            </div>
           </div>
 
-          <button type="submit">Generate</button>
+
+
+          <button type="submit" class="typoBody">Generate <img src="./assets/images/icon-arrow-right.svg" alt="arrow"/></button>
         </form>
 
         
