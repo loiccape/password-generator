@@ -1,212 +1,208 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 @font-face {
-    font-family: 'JetBrain' ;
-    src: url('./assets/fonts/JetBrainsMono-VariableFont_wght.ttf');
+  font-family: "JetBrain";
+  src: url("./assets/fonts/JetBrainsMono-VariableFont_wght.ttf");
 }
-:root{
-
-    --red : #F64A4A;
-    --orange : #FB7C58;
-    --yellow : #F8CD65;
-    --green : #A4FFAF;
-    --white : #E6E5EA;
-    --dark : #24232C;
-    --very-dark : #18171F;
-
+:root {
+  --red: #f64a4a;
+  --orange: #fb7c58;
+  --yellow: #f8cd65;
+  --green: #a4ffaf;
+  --white: #e6e5ea;
+  --dark: #24232c;
+  --very-dark: #18171f;
 }
 
-.typoHeadingL{
-    font-size: 32px;
-    line-height: 43px;
-    font-weight: bold;
+.typoHeadingL {
+  font-size: 32px;
+  line-height: 43px;
+  font-weight: bold;
 }
 
-.typoHeadingM{
-    font-size: 24px;
-    line-height: 31px;
-    font-weight: bold;
+.typoHeadingM {
+  font-size: 24px;
+  line-height: 31px;
+  font-weight: bold;
 }
 
-.typoBody{
-    font-size: 16px;
-    line-height: 23px;
-    font-weight: bold;
+.typoBody {
+  font-size: 16px;
+  line-height: 23px;
+  font-weight: bold;
 }
 
-body{
-    height: 100vh;
-    background-color: var(--very-dark);
-    color: var(--white);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: 'JetBrain';
+body {
+  height: 100vh;
+  background-color: var(--very-dark);
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "JetBrain";
 }
 
-main{
-    margin-top: 80px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-    max-width: 100vw;
+main {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  max-width: 100vw;
 }
 
-h1{
-    color: #817D92;
+h1 {
+  color: #817d92;
 }
 
-.passwordContent{
-    height: 64px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    background-color: var(--dark);
-    margin-top: 16px;
-    color: var(--white);
-    align-items: center;
-    padding-left: 20px;
-    padding-right: 20px;
+.passwordContent {
+  height: 64px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--dark);
+  margin-top: 16px;
+  color: var(--white);
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-form{
-    margin-top: 16px;
-    background-color: var(--dark);
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
+form {
+  margin-top: 16px;
+  background-color: var(--dark);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
-.characterContent > :first-child{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-    align-items: center;
-    
+.characterContent > :first-child {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  align-items: center;
 }
 
 .characterContent > :first-child > span {
-    color: var(--green);
+  color: var(--green);
 }
 
 input[type="range"] {
-    -webkit-appearance: none;
-    width: 100%;
-    height: 8px;
-    background: var(--very-dark);
-    outline: none;
+  -webkit-appearance: none;
+  width: 100%;
+  height: 8px;
+  background: var(--very-dark);
+  outline: none;
 }
 
-input[type="range"]::-webkit-slider-thumb{
-    
-    -webkit-appearance: none;
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    background-color: var(--white);
-
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: var(--white);
 }
 
-.uppercaseLabel{
-    margin-top: 40px;
+.uppercaseLabel {
+  margin-top: 40px;
 }
 
 input[type="checkbox"] {
-    margin-right: 10px;
-    width: 20px;
-    height: 20px;
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
 
-    -webkit-appearance: none;
+  -webkit-appearance: none;
 
-    /* Couleurs par défaut de la case */
-    background-color: var(--dark); /* Couleur de fond initiale */
-    border: 2px solid var(--white); /* Bordure */
-    cursor: pointer;
-    transition: background-color 0.3s, border-color 0.3s;
+  /* Couleurs par défaut de la case */
+  background-color: var(--dark); /* Couleur de fond initiale */
+  border: 2px solid var(--white); /* Bordure */
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
 }
 
 /* Couleur de la case lorsqu'elle est cochée et ajout de l'image */
 input[type="checkbox"]:checked {
-    background-color: var(--green);
-    border: 2px solid var(--green);
-    background-image: url('./assets/images/icon-check.svg'); /* Remplacez par le chemin de votre image */
-    background-size: 70% 70%; /* Ajustez la taille de l'image */
-    background-position: center;
-    background-repeat: no-repeat;
+  background-color: var(--green);
+  border: 2px solid var(--green);
+  background-image: url("./assets/images/icon-check.svg"); /* Remplacez par le chemin de votre image */
+  background-size: 70% 70%; /* Ajustez la taille de l'image */
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-label{
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
+label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
-.strengthContent{
-    background-color: var(--very-dark);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
+.strengthContent {
+  background-color: var(--very-dark);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
 }
 
-.strengthContent > :last-child{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 70%;
-    padding-left: 10px;
+.strengthContent > :last-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  padding-left: 10px;
 }
 
-.power{
-    display: flex;
-   
+.power {
+  display: flex;
 }
 
-.power > *{
-    border: 1px solid white;
-    color: var(--very-dark);
-    margin-left: 5px;
-    width: 10px;
-    height: 28px;
+.power > * {
+  border: 1px solid white;
+  color: var(--very-dark);
+  margin-left: 5px;
+  width: 10px;
+  height: 28px;
 }
 
-button{
-    margin-top: 20px;
-    background-color: var(--green);
-    border: none;
-    height: 56px;
-    display: flex;
-align-items: center;
-justify-content: center;
-color: var(--dark);
+button {
+  margin-top: 20px;
+  background-color: var(--green);
+  border: none;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--dark);
 }
 
 button > img {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 
-@media only screen and (min-device-width : 768px) {
-    main{
-        margin-top: 100px;
-    }
-    section{
-        width: 540px;
-        max-height: 632px;
-    }
-    .passwordContent{
-        margin-bottom: 20px;
-    }
+@media only screen and (min-device-width: 768px) {
+  main {
+    margin-top: 100px;
+  }
+  section {
+    width: 540px;
+    max-height: 632px;
+  }
+  .passwordContent {
+    margin-bottom: 20px;
+  }
 
-    main > :first-child{
-        font-size: ;
-    }
+  .passwordContent {
+    color: #817d92;
+  }
 
-    .passwordContent{
-        color:#817D92
-    }
+  button:hover {
+    background-color: #24232c;
+    color: #a4ffaf;
+    border: solid 1px var(--green);
+  }
 }
